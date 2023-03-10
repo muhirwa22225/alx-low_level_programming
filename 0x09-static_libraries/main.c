@@ -1,7 +1,7 @@
 #include "main.h"
 
-int main()
+int main(void)
 {
-	puts("\"Enjoy the moment, because one day you will wish to enjoy it while you don't have it.\"\n- Justin Muhirwa");
-	return 0;
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
 }
