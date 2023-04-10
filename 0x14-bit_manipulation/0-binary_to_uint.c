@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * first_task - A function that converts binary number
+ * binary_to_uint - A function that converts binary number
  * @b: A pointer to binary string
  * Return: unsigned integer converted number
  */
