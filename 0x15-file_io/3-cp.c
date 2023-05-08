@@ -9,7 +9,11 @@
 
 int safe_close(int);
 /**
+<<<<<<< HEAD
  * main - A function that copy arguments from one argument to another 
+=======
+ * main - Main function to copy files
+>>>>>>> 3bf29146328d721f4c5e72e724fc9989fd3c7a3e
  * @argc: The number of passed arguments
  * @argv: The pointers to array arguments
  * Return: 1 on success, exits on failure
@@ -22,7 +26,11 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+<<<<<<< HEAD
 		exit(97);
+=======
+		exit();
+>>>>>>> 3bf29146328d721f4c5e72e724fc9989fd3c7a3e
 	}
 
 	from_fd = open(argv[1], O_RDONLY);
@@ -81,8 +89,14 @@ int main(int argc, char *argv[])
  */
 int safe_close(int description)
 {
+<<<<<<< HEAD
 	int error = close(description);
 
+=======
+	int error;
+
+	error = close(description);
+>>>>>>> 3bf29146328d721f4c5e72e724fc9989fd3c7a3e
 	if (error < 0)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", description);
 	return (error);
